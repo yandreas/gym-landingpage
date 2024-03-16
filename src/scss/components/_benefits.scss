@@ -1,0 +1,100 @@
+.benefits {
+  max-width: 100rem;
+  margin: 12rem auto 0 auto;
+
+  background-color: $color-white;
+
+  &__tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  &__tab {
+    transform: translateY(-50%);
+  }
+
+  &__tab span {
+    margin-right: 1rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  &__tab--1 {
+    background-color: $color-secondary;
+  }
+
+  &__tab--1:hover {
+    background-color: $color-secondary-darker;
+  }
+
+  &__tab--3 {
+    background-color: $color-tertiary;
+    margin: 0;
+  }
+
+  &__tab--3:hover {
+    background-color: $color-tertiary-darker;
+  }
+
+  &__tab--active {
+    transform: translateY(-66%);
+  }
+
+  &__content {
+    display: none;
+
+    font-size: 1.7rem;
+    padding: 2.5rem 7rem 6.5rem 7rem;
+  }
+
+  &__content--active {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    column-gap: 3rem;
+    row-gap: 0.5rem;
+  }
+
+  &__header {
+    font-size: 2.25rem;
+    font-weight: 500;
+    align-self: center;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+  }
+
+  &__icon img {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+
+  &__content p {
+    grid-column: 2;
+  }
+
+  &__icon--1 {
+    background-color: $color-secondary-opacity;
+  }
+  &__icon--2 {
+    background-color: $color-primary-opacity;
+  }
+  &__icon--3 {
+    background-color: $color-tertiary-opacity;
+  }
+  &__icon--1 img {
+    fill: $color-secondary-darker;
+  }
+  &__icon--2 img {
+    fill: $color-primary;
+  }
+  &__icon--3 img {
+    fill: $color-tertiary;
+  }
+}

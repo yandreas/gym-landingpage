@@ -1,0 +1,56 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 100;
+  gap: 4rem;
+  text-wrap: nowrap;
+
+  @include respond(smallest) {
+    justify-content: space-evenly;
+  }
+
+  &.sticky {
+    position: fixed;
+    background-color: $color-sticky;
+  }
+
+  &__logo {
+    height: 7rem;
+    transition: all 0.3s;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__link--btn:link,
+  &__link--btn:visited {
+    padding: 0.8rem 2.5rem;
+    border-radius: 3rem;
+    background-color: $color-primary;
+    color: $color-nav-dark;
+  }
+
+  &__link--btn:hover,
+  &__link--btn:active {
+    background-color: $color-primary-darker;
+    color: $color-nav-light;
+  }
+}

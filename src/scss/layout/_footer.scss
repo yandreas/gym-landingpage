@@ -1,0 +1,24 @@
+.footer {
+  padding: 6rem 3rem;
+  background-color: $color-nav-light;
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 4rem;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $color-grey-light;
+    text-decoration: none;
+  }
+
+  &__logo {
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+  }
+}

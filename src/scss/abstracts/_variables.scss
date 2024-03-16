@@ -1,0 +1,51 @@
+//colors
+$color-primary: #cea54d;
+$color-secondary: #45c02c;
+$color-tertiary: #e2434b;
+$color-primary-darker: #967838;
+$color-secondary-darker: #318a20;
+$color-tertiary-darker: #962d32;
+$color-primary-opacity: #cea54d49;
+$color-secondary-opacity: #45c02c49;
+$color-tertiary-opacity: #e2434b56;
+$color-white: white;
+$color-black: black;
+$color-background: #f3f3f3;
+$color-grey: #bbb;
+$color-grey-light: #ddd;
+$color-sticky: rgba(255, 255, 255, 0.95);
+
+//font colors
+$color-p: #666;
+$color-header: #444;
+$color-nav-light: #333;
+$color-nav-dark: #222;
+
+//shadows
+$shadow-black: rgba(0, 0, 0, 0.3);
+
+//grdients
+$gradient-primary: linear-gradient(
+  to top left,
+  $color-primary-darker,
+  $color-primary
+);
+$gradient-secondary: linear-gradient(
+  to top left,
+  $color-secondary-darker,
+  $color-secondary
+);
+
+//breakpoints
+
+//1100px
+$breakpoint-tablet: 68.75em;
+
+//750px
+$breakpoint-phone: 46.875em;
+
+//650px
+$breakpoint-mini-phone: 40.625em;
+
+//580px
+$breakpoint-smallest: 36.25em;

@@ -1,0 +1,27 @@
+//Media queries
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallest {
+    @media (max-width: $breakpoint-smallest) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mini-phone {
+    @media (max-width: $breakpoint-mini-phone) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media (max-width: $breakpoint-phone) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+}
